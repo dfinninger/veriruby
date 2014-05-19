@@ -1,9 +1,10 @@
-veriruby
+Veriruby
 ========
 
 Hardware Description Language implemented in Ruby
 
-# Values
+Values
+-------
 - `:high`
 -- Denotes a value of a logical "one"
 - `:low`
