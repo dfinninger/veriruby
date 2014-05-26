@@ -13,7 +13,7 @@ module Primitives
     attr_accessor :input, :output
     attr_reader   :value, :id
     
-    def initialize(input = nil, output = nil)
+    def initialize(input = [], output = [])
       @id     = "#{self.class.name}_#{self.object_id}"
       @input  = input
       @output = output
@@ -38,7 +38,7 @@ module Primitives
     attr_accessor :output
     attr_reader   :value, :id
     
-    def initialize(output = nil, value = :unknown)
+    def initialize(output = [], value = :unknown)
       @id     = "#{self.class.name}_#{self.object_id}"
       @output = output
       @value  = value
